@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+    padding: 0; 
+}
+
+#topo{
+    margin-bottom: 100px;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }  
+
+body{
+    font-size: 1rem;
+    font-family: "Trebuche MV", Helvetica, sans-serif;
+    background-image: url(imagens/back.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#bloco{
+    background-color: rgb(0, 0, 0);
+    display: block;
+    font-size:1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #cceeff;
+    padding: 15px 12px 15px 12px;
+    text-align: center;
+    opacity: .90;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: #cceeff;
+    border-radius: 25px;
+}
+
+#tab{
+    background-color: gainsboro;
+    display: inline-flex;
+    padding: 20px 12px 20px 12px;
+    margin-top: 30px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-radius: 25px;
+}
+

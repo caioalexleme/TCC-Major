@@ -1,0 +1,109 @@
+﻿CREATE DATABASE TCC;
+
+USE TCC;
+
+CREATE TABLE contato(
+  id_contato int NOT NULL AUTO_INCREMENT primary key,
+  nome varchar(60) NOT NULL,
+  email varchar(100) NOT NULL,
+  telefone char(15) NOT NULL,
+  assunto varchar(120) NOT NULL,
+  observacoes varchar(250) NOT NULL);
+
+CREATE TABLE fornecedor(
+  id_forn int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  razao_social varchar(40) NOT NULL,
+  nome_forn varchar(40) NOT NULL,
+  telefone char(15) NOT NULL,
+  cnpj char(18) NOT NULL unique,
+  email varchar(100) NOT NULL unique);
+
+CREATE TABLE manutencao_empresa(
+  id_man_empresa int NOT NULL AUTO_INCREMENT primary key,
+  nome_empresa varchar(60) NOT NULL,
+  cnpj char(18) NOT NULL,
+  email varchar(100) NOT NULL,
+  telefone char(15) NOT NULL,
+  descricao varchar(200) NOT NULL);
+
+CREATE TABLE manutencao_pessoa(
+  id_man_pessoa int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  nome_pessoa varchar(60) NOT NULL,
+  cpf char(14) NOT NULL,
+  email varchar(100) NOT NULL,
+  telefone char(15) NOT NULL,
+  descricao varchar(200) NOT NULL);
+
+CREATE TABLE registre_empresa(
+  CNPJ char(18) NOT NULL PRIMARY KEY,
+  nome varchar(60) NOT NULL,
+  telefone char(15) NOT NULL,
+  email varchar(100) NOT NULL,
+  senha varchar(12) NOT NULL,
+  conf_senha varchar(12) NOT NULL);
+
+CREATE TABLE registre_pessoa(
+  CPF char(14) NOT NULL PRIMARY KEY,
+  nome varchar(60) NOT NULL,
+  telefone char(15) NOT NULL,
+  email varchar(100) NOT NULL,
+  senha varchar(12) NOT NULL,
+  conf_senha varchar(12) NOT NULL);
+
+CREATE TABLE login(
+  id_login int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  email varchar(100) NOT NULL,
+  senha varchar(12) NOT NULL);
+
+CREATE TABLE produto (
+  id_prod int NOT NULL AUTO_INCREMENT primary key,
+  desc_prod varchar(40) NOT NULL,
+  valor decimal(7,2) NOT NULL,
+  img varchar(40) NOT NULL,
+  id_forn int not null,
+  foreign key (id_forn) references fornecedor (id_forn));
+
+  CREATE TABLE pacote (
+  id_pacote int NOT NULL AUTO_INCREMENT primary key,
+  desc_pacote varchar(40) NOT NULL,
+  valor decimal(7,2) NOT NULL,
+  img varchar(40) NOT NULL,
+  id_forn int not null,
+  foreign key (id_forn) references fornecedor (id_forn));
+
+CREATE TABLE pedido_venda(
+  id_ped_venda int NOT NULL AUTO_INCREMENT primary key,
+  data_ped_venda datetime NOT NULL,
+  valor_ped_venda decimal(7,2) NOT NULL,
+  nid_pgto int not null,
+  foreign key (id_pgto) references pagamento (id_pgto),
+  id_login int not null,
+  foreign key (id_login) references login (id_login));
+
+CREATE TABLE pagamento(
+  id_pgto int NOT NULL AUTO_INCREMENT primary key,
+  desc_pgto varchar(40) NOT NULL,
+  id_login int not null,
+  foreign key (id_login) references login (id_login),
+  id_ped_venda int not null,
+  foreign key (id_ped_venda) references pedido_venda (id_ped_venda));
+
+CREATE TABLE endereco(
+  id_endereco int NOT NULL AUTO_INCREMENT primary key,
+  cep char(10) NOT NULL,
+  rua varchar(160) NOT NULL,
+  num varchar(6) NOT NULL,
+  bairro varchar(50) NOT NULL,
+  cidade varchar(50) NOT NULL,
+  uf char(2) NOT NULL,
+  complemento varchar(160),
+  id_login int not null,
+  foreign key (id_login) references login (id_login),
+  id_ped_venda int not null,
+  foreign key (id_ped_venda) references pedido_venda (id_ped_venda));
+
+  CREATE TABLE login_adm(
+  id_login_adm int NOT NULL AUTO_INCREMENT primary key,
+  usuario varchar(100) NOT NULL unique,
+  senha varchar(12) NOT NULL);
+    

@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+	padding: 0; 
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body{
+  font-size: 1em;
+  font-family: "Trebuche MV", Helvetica, sans-serif;
+  background-image: url(imagens/back.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+input{
+  border-radius: 3px;
+  font-size:15px;
+  padding: 3px 3px 3px 3px; 
+  right: 0px;
+  left: 0px;
+}
+
+.lista{
+  background-color: black;
+  margin-left: 36%;
+  margin-right: 36%;
+  padding: 15px 8px 8px 8px;
+  border-radius: 5px;
+  font-size:14px;
+  color: #00BFFF;
+  text-align: center;
+}
+
+/*INICIO ESTILO FORMULÁRIO*/
+#form{
+  background-color: rgb(0, 0, 0);
+  margin-left:34%;
+  margin-right: 34%;
+  padding: 25px 6px 6px 6px;
+  border-radius: 5px;
+  font-size:14px;
+  color: #cceeff;
+  text-align: center;
+  opacity: .9;
+}
+
+#btn{
+  background-color: #0000ff;
+  border-radius: 5px ;
+  margin-left: 6px;
+  margin-right: 6px;
+font-size: 15px;
+color: antiquewhite;
+}
+
+#pag{
+  background-color:#696969;
+  color: white;
+  font-size: 15;
+  padding: 5px;
+  border-style: solid;
+  border-color: #0000ff;
+  width: 100px;
+  height: 20px;
+}
+/*FIM ESTILO FORMULÁRIO */
+

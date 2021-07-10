@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Contatos</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <!--Ajax-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!--Topo da página-->
+  <div id="topo">
+    <div class="container">
+      <div id="menu">
+
+        <div <a href="index.html"><img src="imagens/logoex.png" width="300" height="100"></a></div>
+      </div>
+
+      <!--Inicio Menu-->
+      <div id="navmenu">
+
+        <!--Menu Manutenção-->
+        <div class="dropdown">
+          <button class="btn btn-dark text-white dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Manutenção
+          </button>
+          <div class="dropdown-menu  " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item " href="manut_pessoa.php">Pessoa fisica</a>
+            <a class="dropdown-item  " href="manut_empresa.php">Empresa</a>
+          </div>
+        </div>
+
+        <!--Menu Registros-->
+        <div class="dropdown">
+          <button class="btn btn-dark text-white dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Registros
+          </button>
+          <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="registre_pess.php">Pessoa fisica</a>
+            <a class="dropdown-item" href="registre_emp.php">Empresa</a>
+          </div>
+        </div>
+
+        <!--Menu Cadastro-->
+        <div class="dropdown">
+          <button class="btn btn-dark text-white dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cadastro
+          </button>
+          <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="produto.html">Produtos</a>
+            <a class="dropdown-item" href="pacote.html">Pacotes</a>
+            <a class="dropdown-item" href="fornecedores.html">Fornecedores</a>
+          </div>
+        </div>
+
+        <!--Menu Consulta Vendas-->
+        <div class="dropdown">
+          <button class="btn btn-dark text-white  dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Consulta vendas
+          </button>
+          <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="vs_vendas.php">Visualizar vendas</a>
+            <a class="dropdown-item" href="rel_vendas.html">Gerar relatorios</a>
+          </div>
+        </div>
+
+        <!--Menu Contatos-->
+        <div class="dropdown">
+          <button class="btn btn-dark text-white dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Contatos
+          </button>
+          <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="mensagens.html">Mensagens</a>
+            <a class="dropdown-item" href="excluir_contato.php">Excluir mensagens</a>
+          </div>
+        </div>
+
+        <!--Menu ADM-->
+        <div class="dropdown">
+          <button class="btn btn-dark text-white  dropdown-toggle" type="button" id="dropdownMenuButton"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Sair
+          </button>
+          <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="sair.php">Sair</a>
+          </div>
+        </div>
+      </div><br>
+      <!--Fim Menu-->
+      <!--Inicio Formulario-->
+      <center>
+        <form id="form" action="consulta_contato.php" method="POST">
+          <input type="radio" name="consulta" value="op1">&nbspRelatório &nbsp &nbsp &nbsp
+          <input type="radio" name="consulta" value="op2">&nbspPor Assunto<br><br>
+          <select name="select">
+            <option value="Selecione">Selecione</option>
+            <option value="Solicitar">Solicitar Orçamento</option>
+            <option value="Fornecedores">Fornecedores</option>
+          </select><br><br>
+          <input id="btn" type="submit" id="pesquisar" value="Pesquisar">
+        </form>
+      </center>
+      <!--Fim Formulário-->
+    </div>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

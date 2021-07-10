@@ -1,0 +1,10 @@
+Página do Funcionário
+
+Login: major
+Senha: @123
+
+Para consultas geral de pacotes e produtos, clicar no item consultar;
+Para consultas unitárias, digitar o nome do produto ou pacote;
+
+Consulta de fornecedores é pelo CNPJ;
+Para ter a consulta geral, clicar no botão "Fornecedores" do formulário;

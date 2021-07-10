@@ -1,0 +1,91 @@
+*
+{
+	margin: 0;
+	padding: 0; 
+}
+
+body
+{
+	font-size: 1em;
+	font-family: "Trebuche MV", Helvetica, sans-serif;
+	    background-image: url(imagens/back.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#msgtopo{
+    background-color: black;
+    text-align: center;
+    margin-top: 10px;
+    color:  #cceeff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20;
+    margin-right: 10px;
+    margin-left: 10px;
+    opacity: .95;
+}
+
+#form{
+	background-color: rgb(0, 0, 0);
+	margin-top: 50px;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: auto;
+	padding: 20px 6px 20px 6px;
+	border-radius: 5px;
+	font-size:14px;
+	color: #00FFFF;
+	text-align: center;
+	opacity: .9999999;
+}
+
+table{
+    color: #00FFFF;
+}
+
+#btncar{
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+}
+
+fieldset{
+    background-color: darkcyan;
+    margin-top: 50px;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-bottom: auto;
+	padding: 20px 6px 20px 6px;
+	border-radius: 5px;
+	font-size:14px;
+	opacity: .9;
+text-align: justify;
+}
+
+#btn{
+    background-color:#0000FF;
+    padding: 5px;
+}
+
+.card{
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+	margin-left: 15%;
+	margin-right: 15%;
+    opacity: .85;
+    color: #00FFFF;
+}
+
+#msgfinal{
+    background-color: black;
+    text-align: center;
+	margin-top: 100px;
+	margin-bottom: auto;
+	padding: 20px 20px 20px 20px;
+    color:  #cceeff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30;
+    margin-right: 20%;
+    margin-left: 20%;
+    opacity: .90;
+}

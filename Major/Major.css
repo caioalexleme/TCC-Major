@@ -1,0 +1,47 @@
+body{
+    background: whitesmoke;
+}
+
+#bannergeral{
+    width: 1200px;
+    height: 130px;
+    background: #069;
+    margin: 0 auto;
+}
+
+#bannergeral h1{
+    text-align: center;
+    padding-top: 40px;
+}
+
+#content{
+    background: #ccc;
+    float: left;
+    height: 350px;
+    margin-left: 66px;
+    margin-top: 14px;
+    width: 750px;
+    text-align: center;
+    padding: 4px;
+}
+#sidebar{
+
+    background: #ccc;
+    float: right;
+    margin-right: 65px;
+    margin-top: 14px;
+    text-align: center;
+    padding: 4px;
+    height: 350px;
+    width: 422px;
+}
+
+#rodape{
+    background: #069;
+    float: left;
+    margin-left: 66px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1200px;
+    text-align: center;
+}
